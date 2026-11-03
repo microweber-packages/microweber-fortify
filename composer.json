@@ -1,0 +1,46 @@
+{
+    "name": "microweber-packages/microweber-fortify",
+    "description": "Microweber Fortify - Two-Factor Authentication package for Microweber CMS and standalone Laravel apps",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Microweber",
+            "email": "dev@microweber.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/fortify": "^1.25",
+        "pragmarx/google2fa": "^8.0|^9.0",
+        "bacon/bacon-qr-code": "^3.0",
+        "livewire/livewire": "^4.0",
+        "microweber-packages/microweber-package": "*",
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "phpunit/phpunit": "^11.0",
+        "laravel/dusk": "^8.0",
+        "larastan/larastan": "^3.0",
+        "filament/filament": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MicroweberPackages\\Fortify\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MicroweberPackages\\Fortify\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": "phpstan analyse --memory-limit=1G"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "replace": {
+        "microweber/fortify": "*"
+    }
+}
