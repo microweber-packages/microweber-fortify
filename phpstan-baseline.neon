@@ -1,1 +1,49 @@
 parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Authenticatable\:\:forceFill\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Actions/ResetUserPassword.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Auth\\User\:\:\$id\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Actions/UpdateUserProfileInformation.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$email\.$#'
+			identifier: property.notFound
+			count: 4
+			path: src/FortifyServiceProvider.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$password\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/FortifyServiceProvider.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$token\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/FortifyServiceProvider.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Http\\Request\:\:\$username\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/FortifyServiceProvider.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Foundation\\Application\:\:getLoadedProviders\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/FortifyServiceProvider.php
+
+		-
+			message: '#^Class MicroweberPackages\\User\\Models\\User not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/FortifyServiceProvider.php
